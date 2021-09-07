@@ -13,29 +13,16 @@ const startGetRandomUsers = () => {
 }
 startGetRandomUsers();
 
-const applicationElement = document.querySelector(".date-btn")
+const applicationElement = document.querySelector(".dateBtn")
 
-applicationElement.addEventListener("click", event => {
-    if (event.target.class === ".date-btn") {
-        return startGetRandomUsers();
+applicationElement.addEventListener("click", (event) => {
+    if (event.target.id === "dateBtn") {
+        startGetRandomUsers();
     }
 })
+
+// document.getElementById("dateBtn").onclick= startGetRandomUsers
 
 
 console.log("You look marvelous!")
 
-
-
-
-
-
-
-
-// const getRandomUsers = () => {
-
-// return fetch ("https://randomuser.me/")
-// .then(response => response.json())
-// .then(parsedResponse => {
-//     return parsedResponse;
-// });
-// }
