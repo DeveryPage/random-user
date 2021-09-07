@@ -3,7 +3,7 @@ export const getRandomUsers = () => {
     .then(response => response.json())
     .then(parsedResponse => {
         console.log(parsedResponse)
-        return parsedResponse;
+        return parsedResponse.results[0];
     });
     }
     
